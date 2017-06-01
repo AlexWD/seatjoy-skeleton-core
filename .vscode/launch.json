@@ -9,9 +9,12 @@
             "cwd": "${workspaceRoot}",
             "env": {
                 "NODE_ENV": "local",
+                "FACEBOOK_PAGE_TOKEN": "EAATYL53cxQUBAF8BZB422wZChUXFFmAjXYPNZCiuEe6HYuZBarpNypHU9PzflkfLvs4NHoSAxq3bu668ZC0PiSZBEmjikVqEzlVyIBV1bStnUNJYya6noDvt10s8YT1KaEL3a3ixYy7Cw2OFrAsDb4KrRCjz2OratfitvOCHZBDlwZDZD",
                 "MICROSOFT_APP_ID": "30324cf9-d037-456e-a48d-a5e5b1ea88be",
                 "MICROSOFT_APP_PASSWORD": "ddX9ymCzyRbwhCm4bMPfi3p",
-                "PORT": "5557"
+                "PORT": "5557",
+                //"DB_URI": "mongodb://admin:CJPICFIRGVMULGXA@sl-us-south-1-portal.1.dblayer.com:16174,sl-us-south-1-portal.2.dblayer.com:16174/seatjoy-skeleton?ssl=true&authSource=admin",
+                "DB_URI": "mongodb://localhost:27017/seatjoy-skeleton"                
             },
             "sourceMaps": true,
             "outFiles": [
