@@ -4,7 +4,6 @@ import { ChatConnector, Session, Message, UniversalBot } from 'botbuilder';
 import * as builder from 'botbuilder';
 import * as express from 'express';
 import * as bodyparser from 'body-parser';
-import * as _ from 'lodash';
 
 interface IOptionsArgs {
     message: string;
