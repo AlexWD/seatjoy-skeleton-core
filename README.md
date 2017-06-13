@@ -26,6 +26,16 @@ let connector = new ChatConnector({
 let bot = new UniversalBot(connector);
 ```
 
+Facebook page and POS credentials:
+```
+let fbPageAccessToken = process.env.FB_PAGE_ACCESS_TOKEN;
+
+let merchant = {
+  merchant_id: process.env.MERCHANT_ID,
+  authToken: process.env.MERCHANT_AUTH_TOKEN
+}
+```
+
 
 This code handles default dialog, when none of the options is selected or the bot didn't understand the intent.
 ```Typescript
