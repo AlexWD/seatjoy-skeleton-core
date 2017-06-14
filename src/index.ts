@@ -409,7 +409,7 @@ function sendReceiptCard(session: Session, orderDetails: IOrderDetails) {
       url: `https://graph.facebook.com/v2.6/${session.message.user.id}?fields=first_name,last_name,profile_pic,locale,timezone,gender&access_token=${fbPageAccessToken}`
     };
 
-    let orderItems = JSON.stringify(orderDetails.items);
+    let orderItems = orderDetails.items.map(item => item.itemName).join('|');
 
     request(options, (err, response, body) => {
       if (err) {
