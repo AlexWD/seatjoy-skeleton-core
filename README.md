@@ -27,7 +27,7 @@ let bot = new UniversalBot(connector);
 ```
 
 Facebook page and POS credentials:
-```
+```Typescript
 let fbPageAccessToken = process.env.FB_PAGE_ACCESS_TOKEN;
 
 let merchant = {
